@@ -8,6 +8,7 @@ export default ({userObj, refreshUser}) => {
   const onLogOutClick = () => {
     authService.signOut();
     history.push("/");
+    refreshUser();
   };
   const getMyNweets = async () =>{
     const nweets = await dbService.collection("nweets").where("creatorId","==", userObj.uid).orderBy("createdAt","asc").get();

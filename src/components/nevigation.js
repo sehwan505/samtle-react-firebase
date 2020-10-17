@@ -4,7 +4,9 @@ const Navigation = () => (
   <nav>
     <ul>
       <li>
-        <Link to="/">Home</Link>
+      <Link to="/">
+        홈
+        </Link>
       </li>
 
       <li>
